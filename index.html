@@ -84,7 +84,7 @@
     </div>
 
     <script>
-        fetch('config.json?v=' + Date.now())
+        fetch('https://raw.githubusercontent.com/Dung01le/coquanthuongtruc57/main/config.json?v=' + Date.now())
             .then(res => res.json())
             .then(data => {
                 if (data && data.portal_url && data.portal_url.startsWith('http')) {
